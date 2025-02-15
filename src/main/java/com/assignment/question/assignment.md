@@ -1,18 +1,18 @@
-#### Q22. Builder Configuration
+#### Q23. Builder - Query
 `Unsolved`
 
-[Assignment Link](https://www.scaler.com/academy/mentee-dashboard/class/345792/assignment/problems/75124)
+[Assignment Link](https://www.scaler.com/academy/mentee-dashboard/class/345792/assignment/problems/75141)
 
-## Builder Pattern Implementation for a database configuration class
+## Builder Pattern Implementation for Building Queries
 ### Problem Statement
-You are tasked with creating a system-wide database configuration for a complex software suite. The configuration is responsible for managing various configuration settings that affect the data layer. To ensure a flexible and readable way to create configuration instances that are immutable, you decide to implement the Builder pattern.
+You are tasked with developing a database management system that involves creating and executing SQL queries. Queries can vary in complexity, involving different SELECT clauses, JOIN operations, WHERE conditions, and more. The current approach of constructing queries using concatenated strings has proven to be error-prone, difficult to read, and challenging to modify. You should implement the Builder pattern to create instances of query objects with various configurations, resulting in more maintainable and flexible code.
 
 ### Assignment
-Your task is to implement the Builder pattern to create instances of a configuration manager class. The Builder pattern allows for step-by-step construction of complex objects while keeping the creation process separate from the main object.
+Your task is to implement the Builder pattern to construct query objects with different configurations. The Builder pattern facilitates the step-by-step construction of complex objects while keeping the creation process separate from the main object.
 
 ### Implementing the Builder Pattern
-1. **Review the original class** - You have been provided with a class that represents the database configuration `DatabaseConfiguration`. The class has a number of properties that are used to configure the database connection. Your task is to implement the Builder pattern to create instances of a class with the same properties.
+1. **Review the original class**: You have been provided with a class named `Query`. This class represents SQL queries with different components. Your task is to implement the Builder pattern to create instances of a class with the same properties.
 
-2. **Create the builder class** - Create a new class called `DatabaseConfigurationBuilder` that will implement the builder patter. A dummy class has been provided for you to start with. Remember to annotate the class with the `@WithBuilder` annotation. The name does not matter as long as it is annotated.
+2. **Create the builder class**: Develop a new class called `QueryBuilder` that will implement the Builder pattern for creating query instances. A starter class has been given for you to begin with. Don't forget to annotate the class with the `@WithBuilder` annotation. The actual name of the class doesn't matter, as long as it is annotated.
 
-3. **Test your implementation** - A test case has been provided for you to test your implementation. Run the test case to ensure that your implementation is correct. This will pick the correct implementation of the builder class based on the `@WithBuilder` annotation.
+3. **Test your implementation**: Test cases have been provided for you to verify the correctness of your implementation. Execute the test cases to ensure the accuracy of your code.
