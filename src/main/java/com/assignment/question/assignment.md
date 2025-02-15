@@ -1,6 +1,8 @@
 #### Q22. Builder Configuration
 `Unsolved`
 
+[Assignment Link](https://www.scaler.com/academy/mentee-dashboard/class/345792/assignment/problems/75124)
+
 ## Builder Pattern Implementation for a database configuration class
 ### Problem Statement
 You are tasked with creating a system-wide database configuration for a complex software suite. The configuration is responsible for managing various configuration settings that affect the data layer. To ensure a flexible and readable way to create configuration instances that are immutable, you decide to implement the Builder pattern.
