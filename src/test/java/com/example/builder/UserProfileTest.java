@@ -36,4 +36,22 @@ class UserProfileTest {
 
         assertEquals(expectedMsg, exception.getMessage());
     }
+
+    @Test
+    void testBasicUserProfile() {
+        Director director = new Director(new UserProfile.Builder());
+        assertDoesNotThrow(() -> {
+            UserProfile userProfile = director.buildBasicUserProfile("Gandhi", "6545342312");
+            System.out.println("Basic user profile: " + userProfile);
+        });
+    }
+
+    @Test
+    void testFullUserProfile() {
+        Director director = new Director(new UserProfile.Builder());
+        assertDoesNotThrow(() -> {
+            UserProfile userProfile = director.buildFullUserProfile("Sam", "Pitroda", "sam@pitroda.com", "8756437654");
+            System.out.println("Full user profile: " + userProfile);
+        });
+    }
 }
