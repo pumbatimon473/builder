@@ -1,18 +1,18 @@
-#### Q23. Builder - Query
+#### Q24. Builder Message
 `Unsolved`
 
-[Assignment Link](https://www.scaler.com/academy/mentee-dashboard/class/345792/assignment/problems/75141)
+[Assignment Link](https://www.scaler.com/academy/mentee-dashboard/class/345792/assignment/problems/75142)
 
-## Builder Pattern Implementation for Building Queries
+## Builder Pattern Implementation for a messaging service
 ### Problem Statement
-You are tasked with developing a database management system that involves creating and executing SQL queries. Queries can vary in complexity, involving different SELECT clauses, JOIN operations, WHERE conditions, and more. The current approach of constructing queries using concatenated strings has proven to be error-prone, difficult to read, and challenging to modify. You should implement the Builder pattern to create instances of query objects with various configurations, resulting in more maintainable and flexible code.
+You are developing a messaging application with support for various message types, including text, images, audio, and video. Each message type can have additional attributes and settings, such as delivery status and timestamps. The current approach of creating message objects using multiple overloaded constructors has become error-prone and challenging to maintain. You should streamline the creation of message objects with different configurations and immutable objects.
 
 ### Assignment
-Your task is to implement the Builder pattern to construct query objects with different configurations. The Builder pattern facilitates the step-by-step construction of complex objects while keeping the creation process separate from the main object.
+Your task is to implement the Builder pattern to create instances of message objects with different configurations. The Builder pattern allows for step-by-step construction of complex objects while keeping the creation process separate from the main object.
 
 ### Implementing the Builder Pattern
-1. **Review the original class**: You have been provided with a class named `Query`. This class represents SQL queries with different components. Your task is to implement the Builder pattern to create instances of a class with the same properties.
+1. **Review the original class**: You have been provided with a class named `Message`. This class represents different message types and their attributes. Your task is to implement the Builder pattern to create instances of a class with the same properties.
 
-2. **Create the builder class**: Develop a new class called `QueryBuilder` that will implement the Builder pattern for creating query instances. A starter class has been given for you to begin with. Don't forget to annotate the class with the `@WithBuilder` annotation. The actual name of the class doesn't matter, as long as it is annotated.
+2. **Create the builder class**: Create a new class called `MessageBuilder` that will implement the builder patter. A dummy class has been provided for you to start with. Remember to annotate the class with the `@WithBuilder` annotation. The name does not matter as long as it is annotated.
 
-3. **Test your implementation**: Test cases have been provided for you to verify the correctness of your implementation. Execute the test cases to ensure the accuracy of your code.
+3. **Test your implementation**: Test cases has been provided for you to test your implementation. Run the test case to ensure that your implementation is correct.
